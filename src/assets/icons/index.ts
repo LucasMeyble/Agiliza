@@ -3,5 +3,8 @@ import EmailIcon from './email.svg';
 import LockIcon from './lock_black.svg';
 import EmailIconPng from './email.png';
 import LockIconPng from './lock_black.png';
+import googleIcon from './google.png';
+import facebookIcon from './facebook.png';
+import linkedinIcon from './linkedin.png';
 
-export { EmailIcon, LockIcon, EmailIconPng, LockIconPng  };
+export { EmailIcon, LockIcon, EmailIconPng, LockIconPng, googleIcon, facebookIcon, linkedinIcon  };
