@@ -9,6 +9,10 @@ import linkedinIcon from './linkedin.png';
 import searchIcon from './search.png';
 import chatIcon from './chat.png';
 import profileIcon from './profile.png';
+import workIcon from './work.png';
+import  searchBlueIcon from './searchBlue.png';
+
+
 import starIcon from './star.png';
 
 export { EmailIcon, 
@@ -21,4 +25,6 @@ export { EmailIcon,
     searchIcon,
     chatIcon,
     starIcon,
-    profileIcon};
+    profileIcon,
+    workIcon,
+    searchBlueIcon};
