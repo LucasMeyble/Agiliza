@@ -4,8 +4,18 @@ export const styles = StyleSheet.create({
 
     container: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    image: {
+        flex: 1,
+        justifyContent: "center"
+      },
+    content: {
+        backgroundColor: "#fff",
+        width: '90%',
+        flex: 1,
+        paddingHorizontal: 30,
+        marginTop: 150,
     }
-
 })

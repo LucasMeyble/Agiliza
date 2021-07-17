@@ -1,14 +1,22 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, ImageBackground } from "react-native";
+import { background } from "../../assets/images";
 
 import { styles } from './style';
 
+const image = { uri: "https://reactjs.org/logo-og.png" };
+
 export function Profile({ navigation }: any) {
-    return(
+    return (
 
-        <View style={styles.container}>
-            <Button title="aperte=me" onPress={() => navigation.navigate('Login')}/>
-        </View>
 
+        <ImageBackground source={background} resizeMode="cover" style={styles.image}>
+            <View style={styles.container}>
+                <View style={styles.content}>
+
+                </View>
+
+            </View>
+        </ImageBackground>
     )
 }
