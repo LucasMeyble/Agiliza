@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
         fontSize: 18,
         padding: 15,
         paddingLeft: 50,
-        fontFamily: theme.fonts.text200
+        fontFamily: theme.fonts.roboto100
     },
     container: {
         marginLeft: 20,
