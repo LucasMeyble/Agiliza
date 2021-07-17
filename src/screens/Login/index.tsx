@@ -8,6 +8,8 @@ import { Input } from '../../components/Input';
 import { Logo } from '../../components/logo';
 import { styles } from './style';
 
+import { theme } from '../../global/styles/theme';
+
 export function Login() {
 
     return (
