@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Button, ImageBackground, ScrollView, Image } from "react-native";
 import { background } from "../../assets/images";
+import { Classifications } from "../../components/classifications";
 import { ItemList } from "../../components/infoItem";
 import { ItemCertificated } from "../../components/itemCertificated";
 
@@ -51,8 +52,14 @@ export function Profile({ navigation }: any) {
 
                         <ItemCertificated label={"IBM"} value={"Data Science"} number={"nº 1516151515151"} />
                         <ItemCertificated label={"RocketSeat"} value={"React Native"} number={"nº 1516151515151"} />
-                    </View>
 
+                        <View style={styles.infoUser}>
+                            <Text style={styles.titleInfo}>Classificações</Text>
+                        </View>
+
+                        <Classifications />
+                        <Classifications />
+                    </View>
                 </View>
             </ScrollView>
         </ImageBackground >
