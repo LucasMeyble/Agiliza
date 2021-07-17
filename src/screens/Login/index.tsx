@@ -1,8 +1,9 @@
 import React from 'react';
 import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image } from 'react-native';
 
-import { EmailIconPng, LockIconPng } from "../../assets/icons";
+import { EmailIconPng, facebookIcon, googleIcon, linkedinIcon, LockIconPng } from "../../assets/icons";
 import { Button } from '../../components/button';
+import { ButtonIcon } from '../../components/buttonIcon';
 import { Input } from '../../components/Input';
 import { Logo } from '../../components/logo';
 import { styles } from './style';
@@ -28,6 +29,14 @@ export function Login() {
                                 <View style={styles.background}>
                                     <Text>Ou se preferir </Text>
                                 </View>
+                            </View>
+                            <View style={styles.viewButtons}>
+                                <ButtonIcon icon={googleIcon} />
+                                <ButtonIcon icon={facebookIcon} />
+                                <ButtonIcon icon={linkedinIcon} />
+                            </View>
+                            <View style={styles.viewSignOut}>
+                                <Text style={styles.signOut}>Faça seu cadastro!</Text>
                             </View>
                         </>
                     </TouchableWithoutFeedback>

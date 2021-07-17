@@ -27,6 +27,20 @@ export const styles = StyleSheet.create({
     background: {
         backgroundColor: '#E7E7EB', 
         paddingHorizontal:10,
+    },
+    viewButtons: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        marginTop: 50,
+    },
+    signOut: {
+        fontSize: 15,
+
+    },
+    viewSignOut: {
+        flexDirection: 'row',
+        justifyContent: 'center',
+        marginTop: 40,
     }
     
 
