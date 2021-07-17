@@ -5,6 +5,8 @@ import { EmailIconPng, LockIconPng } from "../../assets/icons";
 import { Input } from '../../components/Input';
 import { styles } from './style';
 
+import { theme } from '../../global/styles/theme';
+
 export function Login() {
 
     return (
