@@ -8,6 +8,7 @@ import facebookIcon from './facebook.png';
 import linkedinIcon from './linkedin.png';
 import searchIcon from './search.png';
 import chatIcon from './chat.png';
+import profileIcon from './profile.png';
 import starIcon from './star.png';
 
 export { EmailIcon, 
@@ -19,4 +20,5 @@ export { EmailIcon,
     linkedinIcon,
     searchIcon,
     chatIcon,
-    starIcon };
+    starIcon,
+    profileIcon};
