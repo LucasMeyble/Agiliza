@@ -42,6 +42,4 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         marginTop: 40,
     }
-    
-
 })
