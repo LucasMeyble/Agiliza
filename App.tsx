@@ -13,12 +13,12 @@ export default function App() {
   const [fontsLoaded] = useFonts({
     Montserrat_400Regular,
     Montserrat_200ExtraLight,
-    Roboto_400Regular, 
-    Roboto_100Thin, 
+    Roboto_400Regular,
+    Roboto_100Thin,
     Roboto_300Light
   });
 
-  if(!fontsLoaded){
+  if (!fontsLoaded) {
     return <AppLoading />
   }
 
