@@ -1,14 +1,24 @@
 import React from "react";
-import { TextInput } from "react-native";
+import { Image, TextInput, View, ImageSourcePropType } from "react-native";
 import { styles } from "./style";
+import { EmailIcon, EmailIconPng } from "../../assets/icons";
+import { SvgUri } from 'react-native-svg'
 
-export function Input(){
-    return(
+type Props = {
+    placeHolder: string,
+    icon: ImageSourcePropType
+}
 
-        <TextInput 
-            style={styles.input}
-            placeholder="teste"
-        />
+export function Input({ placeHolder, icon }: Props) {
+    return (
+        <View style={styles.container}>
+            <Image style={styles.icon} source={icon} />
+            <TextInput
+                style={styles.input}
+                placeholder={placeHolder}
+            />
+        </View>
+
 
     )
 }
