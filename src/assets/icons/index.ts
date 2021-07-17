@@ -8,5 +8,6 @@ import facebookIcon from './facebook.png';
 import linkedinIcon from './linkedin.png';
 import searchIcon from './search.png';
 import chatIcon from './chat.png';
+import profileIcon from './profile.png';
 
-export { EmailIcon, LockIcon, EmailIconPng, LockIconPng, googleIcon, facebookIcon, linkedinIcon, searchIcon, chatIcon };
+export { EmailIcon, LockIcon, EmailIconPng, LockIconPng, googleIcon, facebookIcon, linkedinIcon, searchIcon, chatIcon, profileIcon };
