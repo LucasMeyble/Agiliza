@@ -37,5 +37,20 @@ export const styles = StyleSheet.create({
     },
     infoUser: {
         marginTop: 30,
+    },
+    avatarImage: {
+        width: 162,
+        height: 162,
+        borderRadius: 120,
+    },
+    background:{
+        alignItems: "center",
+        justifyContent: "center",
+        position: "relative",
+        width: 175,
+        height: 175,
+        backgroundColor: "#fff",
+        borderRadius: 120,
+        marginTop: -80,
     }
 })

@@ -4,15 +4,18 @@ import { styles } from "./style";
 import { EmailIcon, EmailIconPng } from "../../assets/icons";
 import { SvgUri } from 'react-native-svg'
 
+type props = {
+    label: string,
+    value: string,
+}
 
-
-export function ItemList() {
+export function ItemList({ label, value }: props) {
     return (
         <View style={styles.container}>
 
             <View style={styles.content}>
-                <Text style={styles.label}>Email</Text>
-                <Text style={styles.info}>alvesjonatas99@gmail.com</Text>
+                <Text style={styles.label}>{label}</Text>
+                <Text style={styles.info}>{value}</Text>
             </View>
             <View style={styles.Hr} />
         </View>

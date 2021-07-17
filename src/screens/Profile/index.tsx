@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Button, ImageBackground, ScrollView } from "react-native";
+import { View, Text, Button, ImageBackground, ScrollView, Image } from "react-native";
 import { background } from "../../assets/images";
 import { ItemList } from "../../components/infoItem";
 
@@ -12,33 +12,44 @@ export function Profile({ navigation }: any) {
 
 
         <ImageBackground source={background} resizeMode="cover" style={styles.image}>
-            <View style={styles.container}>
-                <View style={styles.content}>
-                    <View style={styles.headerUser}>
-                        <Text style={styles.title}>Jônatas Alves</Text>
-                        <Text style={styles.subtitle}>Software Engineer</Text>
-                    </View>
-                    <ScrollView>
+            <ScrollView>
+                <View style={styles.container}>
+
+
+                    <View style={styles.content}>
+
+                        <View style={styles.headerUser}>
+                            <View style={styles.background} >
+                                <Image style={styles.avatarImage} source={{ uri: "https://avatars.githubusercontent.com/u/49556955?s=400&u=9c9e1f43d8fb1eca88c3bd81d9719d454c92f081&v=4" }} />
+
+                            </View>
+                            <Text style={styles.title}>Jônatas Alves</Text>
+                            <Text style={styles.subtitle}>Software Engineer</Text>
+                        </View>
+
                         <View style={styles.infoUser}>
                             <Text style={styles.titleInfo}>Dados Pessoais</Text>
                         </View>
 
-                        <ItemList />
-                        <ItemList />
-                        <ItemList />
-                        <ItemList />
+                        <ItemList label={"Email"} value={"alvesjonatas99@gmail.com"} />
+                        <ItemList label={"Telefone"} value={"(81) 99252-8586"} />
+                        <ItemList label={"Endereço"} value={"Rua Inácia Maria de Arruda"} />
+                        <ItemList label={"Cidade"} value={"Bezerros - PE"} />
 
                         <View style={styles.infoUser}>
                             <Text style={styles.titleInfo}>Dados Profissionais</Text>
                         </View>
 
-                        <ItemList />
-                        <ItemList />
-                        <ItemList />
-                        <ItemList />
-                    </ScrollView>
+                        <ItemList label={"Profissão"} value={"Software Engineer"} />
+                        <ItemList label={"Anos Exp."} value={"3 Anos"} />
+                        <ItemList label={"Empresa"} value={"Adasi Software"} />
+
+
+
+                    </View>
+
                 </View>
-            </View>
-        </ImageBackground>
+            </ScrollView>
+        </ImageBackground >
     )
 }
