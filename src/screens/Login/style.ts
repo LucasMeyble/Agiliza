@@ -15,6 +15,18 @@ export const styles = StyleSheet.create({
         fontSize: 18,
         color: '#5B687B',
         textAlign: 'center',
+    },
+    Hr: {
+        marginTop: 50,
+        marginHorizontal: 20,
+        height: 1,
+        backgroundColor: '#546B7B',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    background: {
+        backgroundColor: '#E7E7EB', 
+        paddingHorizontal:10,
     }
     
 

@@ -24,6 +24,11 @@ export function Login() {
                                 <Input placeHolder={"Digite sua senha"} icon={LockIconPng} />
                                 <Button title={"Login"} />
                             </View>
+                            <View style={styles.Hr}>
+                                <View style={styles.background}>
+                                    <Text>Ou se preferir </Text>
+                                </View>
+                            </View>
                         </>
                     </TouchableWithoutFeedback>
                 </KeyboardAvoidingView>
