@@ -12,4 +12,19 @@ import profileIcon from './profile.png';
 import workIcon from './work.png';
 import  searchBlueIcon from './searchBlue.png';
 
-export { EmailIcon, LockIcon, EmailIconPng, LockIconPng, googleIcon, facebookIcon, linkedinIcon, searchIcon, chatIcon, profileIcon, workIcon, searchBlueIcon };
+
+import starIcon from './star.png';
+
+export { EmailIcon, 
+    LockIcon,
+    EmailIconPng,
+    LockIconPng,
+    googleIcon,
+    facebookIcon,    
+    linkedinIcon,
+    searchIcon,
+    chatIcon,
+    starIcon,
+    profileIcon,
+    workIcon,
+    searchBlueIcon};
