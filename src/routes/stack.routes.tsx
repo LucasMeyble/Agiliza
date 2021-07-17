@@ -4,6 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 const Stack = createStackNavigator();
 
 import { Home } from '../screens/Home'; 
+import { Login } from '../screens/Login';
 
 export function StackRouts(){
     return(
@@ -13,6 +14,10 @@ export function StackRouts(){
             <Stack.Screen 
                 name="Home"
                 component={Home}
+            />
+            <Stack.Screen 
+                name="Login"
+                component={Login}
             />
         </Stack.Navigator>
     )

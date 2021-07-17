@@ -1,15 +1,13 @@
 import React from "react";
-import { View, Text,  } from "react-native";
+import { View, Text, Button } from "react-native";
 
 import { styles } from './style';
 
-export function Home() {
+export function Home({ navigation }: any) {
     return(
 
         <View style={styles.container}>
-            <Text>
-                ola mundo
-            </Text>
+            <Button title="aperte=me" onPress={() => navigation.navigate('Login')}/>
         </View>
 
     )
