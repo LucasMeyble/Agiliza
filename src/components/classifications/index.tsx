@@ -14,10 +14,10 @@ export function Classifications() {
 
 
 
-            <View style={styles.coment}>
+            <View style={styles.comment}>
                 <View style={styles.header}>
                     <View>
-                        <Text style={styles.nameClassification}>Thiago Golvea</Text>
+                        <Text style={styles.nameClassification}>Thiago Gouvêa</Text>
                         <Text >16/06/2021</Text>
                     </View>
 
@@ -30,7 +30,7 @@ export function Classifications() {
                     </View>
                 </View>
                 <View>
-                    <Text style={styles.textClassifictaion}>Trabalho muito bom! Fiz minha abertura de cnpj
+                    <Text style={styles.textClassification}>Trabalho muito bom! Fiz minha abertura de cnpj
                         com ele no prazo tudo foi resolvido.</Text>
                 </View>
 

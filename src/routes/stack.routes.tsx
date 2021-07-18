@@ -16,6 +16,7 @@ export function StackRouts() {
             headerMode="none"
         >
             <Stack.Screen
+
                 name="Home"
                 component={AuthRoutes}
             />
@@ -24,6 +25,7 @@ export function StackRouts() {
                 component={RegisterS2}
             />
             <Stack.Screen
+
                 name="Login"
                 component={Login}
             />
