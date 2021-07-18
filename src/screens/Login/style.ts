@@ -6,6 +6,11 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#E7E7EB',
     },
+
+    imageContainer: {
+        margin: 74
+    },
+
     title: {
         fontSize: 35,
         color: '#5B687B',
@@ -34,13 +39,12 @@ export const styles = StyleSheet.create({
         marginTop: 50,
     },
     signOut: {
-        fontSize: 15,
-
+        fontSize: 18,
     },
     viewSignOut: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: 40,
+        marginTop: 25,
     }
 
 })

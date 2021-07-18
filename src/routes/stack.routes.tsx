@@ -16,18 +16,16 @@ export function StackRouts() {
             headerMode="none"
         >
             <Stack.Screen
-
                 name="Home"
                 component={AuthRoutes}
             />
             <Stack.Screen
-                name="RegisterS2"
-                component={RegisterS2}
-            />
-            <Stack.Screen
-
                 name="Login"
                 component={Login}
+            />
+            <Stack.Screen
+                name="RegisterS2"
+                component={RegisterS2}
             />
             <Stack.Screen
                 name="Register"

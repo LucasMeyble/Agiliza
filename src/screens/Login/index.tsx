@@ -17,9 +17,10 @@ export function Login() {
             <SafeAreaView>
                 <KeyboardAvoidingView>
                     <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
-
                         <>
-                            <Logo />
+                            <View style={styles.imageContainer}>
+                                <Logo />
+                            </View>
                             <Text style={styles.title}>Seja bem vindo!</Text>
                             <Text style={styles.subTitle}>Logue com sua conta</Text>
                             <View >
