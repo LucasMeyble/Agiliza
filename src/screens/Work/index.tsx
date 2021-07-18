@@ -1,10 +1,22 @@
 import React from "react";
 import { View, Text, Button, Image, TouchableOpacity } from "react-native";
-import { backIcon } from "../../assets/icons";
+import { backIcon, doneIcon, workBlackIcon } from "../../assets/icons";
+import Swipeable from 'react-native-gesture-handler/Swipeable';
 
 import { styles } from './style';
 
 export function Work({ navigation }: any) {
+
+    const LeftActions = () => {
+        return (
+            <TouchableOpacity >
+                <View style={styles.buttonAdd}>
+                    <Image source={doneIcon} />
+                </View>
+            </TouchableOpacity>
+        )
+    }
+
     return (
 
         <View style={styles.container}>
@@ -17,6 +29,53 @@ export function Work({ navigation }: any) {
                     <Text style={styles.title}>Olá, Jônatas</Text>
                     <Text style={styles.subtitle}>Aqui estão alguns jobs para você</Text>
                 </View>
+
+            </View>
+            <View style={styles.content}>
+
+                <Swipeable renderRightActions={LeftActions}>
+                    <View style={styles.button}>
+                        <View style={styles.icon}>
+                            <Image source={workBlackIcon} />
+                        </View>
+                        <View>
+                            <Text style={styles.titleJob}>Declaração de Imposto de renda</Text>
+                        </View>
+                    </View>
+                </Swipeable>
+
+                <Swipeable renderRightActions={LeftActions}>
+                    <View style={styles.button}>
+                        <View style={styles.icon}>
+                            <Image source={workBlackIcon} />
+                        </View>
+                        <View>
+                            <Text style={styles.titleJob}>Inseção de taxas</Text>
+                        </View>
+                    </View>
+                </Swipeable>
+
+                <Swipeable renderRightActions={LeftActions}>
+                    <View style={styles.button}>
+                        <View style={styles.icon}>
+                            <Image source={workBlackIcon} />
+                        </View>
+                        <View>
+                            <Text style={styles.titleJob}>Abertura de CNPJ</Text>
+                        </View>
+                    </View>
+                </Swipeable>
+
+                <Swipeable renderRightActions={LeftActions}>
+                    <View style={styles.button}>
+                        <View style={styles.icon}>
+                            <Image source={workBlackIcon} />
+                        </View>
+                        <View>
+                            <Text style={styles.titleJob}>Causa trabalhista</Text>
+                        </View>
+                    </View>
+                </Swipeable>
             </View>
         </View>
 

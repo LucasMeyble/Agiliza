@@ -12,7 +12,8 @@ import profileIcon from './profile.png';
 import workIcon from './work.png';
 import searchBlueIcon from './searchBlue.png';
 import backIcon from './back.png';
-
+import doneIcon from './done.png';
+import workBlackIcon from './workBlack.png';
 import starIcon from './star.png';
 
 export { EmailIcon, 
@@ -28,4 +29,6 @@ export { EmailIcon,
     profileIcon,
     workIcon,
     searchBlueIcon,
-    backIcon};
+    backIcon,
+    doneIcon,
+    workBlackIcon };
