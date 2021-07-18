@@ -16,6 +16,10 @@ import doneIcon from './done.png';
 import workBlackIcon from './workBlack.png';
 import starIcon from './star.png';
 import closeIcon from './close.png';
+import cameraIcon from './camera.png';
+import videoCamIcon from './videocam.png';
+import galeryIcon from './galery.png';
+import moreIcon from './more.png';
 
 export { EmailIcon, 
     LockIcon,
@@ -33,4 +37,8 @@ export { EmailIcon,
     backIcon,
     doneIcon,
     workBlackIcon,
-    closeIcon };
+    closeIcon,
+    cameraIcon,
+    videoCamIcon,
+    galeryIcon,
+    moreIcon };

@@ -76,4 +76,20 @@ export const styles = StyleSheet.create({
         marginTop: 30,
         marginLeft: 25,
     },
+    bottom:{
+        paddingHorizontal: 20,
+        height:70,
+        flexDirection:'row',
+        alignItems:'center',
+        backgroundColor:'#fff',
+
+    },
+    iconBottom:{
+        marginHorizontal: 8,
+        width: 35,
+        height: 30,
+    },
+    iconMore:{
+        marginHorizontal: 8,
+    },
 })

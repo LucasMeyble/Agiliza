@@ -11,7 +11,7 @@ export function NewCalled({ navigation }: any) {
         setModalVisible(true);
     })
 
-    const [modalVisible, setModalVisible] = useState(true);
+    const [modalVisible, setModalVisible] = useState(false);
 
     return (
         <>
@@ -25,7 +25,7 @@ export function NewCalled({ navigation }: any) {
                         setModalVisible(!modalVisible);
                     }}
                 >
-                    <ModalAdd setModalVisible={setModalVisible} modalVisible={modalVisible} />
+                    <ModalAdd navigation={navigation} setModalVisible={setModalVisible} modalVisible={modalVisible} />
                 </Modal>
             </View>
         </>

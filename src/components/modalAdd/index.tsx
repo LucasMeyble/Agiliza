@@ -1,20 +1,28 @@
 import React from "react";
 import { Image, TextInput, View, ImageSourcePropType, Text, TouchableOpacity } from "react-native";
 import { styles } from "./style";
-import { closeIcon, EmailIcon, EmailIconPng } from "../../assets/icons";
+import { cameraIcon, closeIcon, EmailIcon, EmailIconPng, galeryIcon, moreIcon, videoCamIcon } from "../../assets/icons";
 import { SvgUri } from 'react-native-svg'
 
 type Props = {
     modalVisible: boolean,
     setModalVisible: (visible: boolean) => void,
+    navigation: Object,
 }
 
 
-export function ModalAdd({ setModalVisible, modalVisible }: Props) {
+
+export function ModalAdd({ setModalVisible, modalVisible, navigation }: Props) {
+
+    const handleClose = () => {
+        setModalVisible(false);
+        navigation.navigate("Home")
+    }
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <TouchableOpacity >
+                <TouchableOpacity onPress={handleClose}>
                     <Image style={styles.icon} source={closeIcon} />
                 </TouchableOpacity>
                 <Text style={styles.titleModal}>Compartilhar serviço</Text>
@@ -47,7 +55,20 @@ export function ModalAdd({ setModalVisible, modalVisible }: Props) {
                     placeholder={"O que você está precisando"}
                 />
             </View>
-
+            <View style={styles.bottom}>
+                <TouchableOpacity>
+                    <Image style={styles.iconBottom} source={cameraIcon} />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image style={styles.iconBottom} source={videoCamIcon} />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image style={styles.iconBottom} source={galeryIcon} />
+                </TouchableOpacity>
+                <TouchableOpacity>
+                    <Image style={styles.iconMore} source={moreIcon} />
+                </TouchableOpacity>
+            </View>
         </View >
 
 
