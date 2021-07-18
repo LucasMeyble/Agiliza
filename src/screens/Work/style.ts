@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     },
     header: {
         marginTop: 60,
-        marginLeft: 40,
+        marginLeft: 20,
         flexDirection: "row",
     },
     textHeader: {
@@ -79,6 +79,14 @@ export const styles = StyleSheet.create({
         marginLeft: 20,
         fontSize: 17,
         color: "#5C6660",
+    }, 
+    backgroundImage:{
+        width: 75,
+        height: 75,
+        alignItems: "center",
+        justifyContent: "center",
+        borderRadius: 100,
+        backgroundColor:'#0012B1',
     }
 
 
