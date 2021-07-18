@@ -2,6 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import React from "react";
 import { Image, TextInput, View, Text, ImageSourcePropType, TouchableOpacity } from "react-native";
 import { styles } from "./style";
+import { ButtonCardChoice } from '../buttonCardChoice';
 
 
 export function CardService() {
@@ -20,15 +21,15 @@ export function CardService() {
             </View>
             <View style={styles.content}>
                 <Text style={styles.titleService}>Titulo</Text>
-                <Text style={styles.messageService}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate mi vel ornare suscipit. In commodo ante id lectus dictum, non tempus quam interdum. Suspendisse ac tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum at ligula eu erat scelerisque viverra. Nunc sit amet aliquet tellus. Ut quis eros luctus, pretium libero non, aliquam urna. Praesent bibendum urna vel pulvinar convallis. Etiam varius egestas vestibulum. Cras vitae convallis dui. Morbi eu volutpat lacus, ut ornare nisi. Proin commodo, est sit amet.</Text>
+                <Text style={styles.messageService}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vulputate mi vel ornare suscipit. In commodo ante id lectus dictum, non tempus quam interdum. Suspendisse ac tincidunt felis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </Text>
             </View>
-            <View style={styles.buttons}>
-                <TouchableOpacity style={styles.button} onPress={() => { }}>
-                    <Text>Concorrer</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.button} onPress={() => { }}>
-                    <Text>Concorrer</Text>
-                </TouchableOpacity>
+            <View style={styles.buttonsContainer}>
+                <View style={styles.button}>
+                    <ButtonCardChoice title={"Concorrer"} color={'#37D086'} />
+                </View>
+                <View style={styles.button}>
+                    <ButtonCardChoice title={"Ver Informações"} color={'#04B1D7'} />
+                </View>
             </View>
 
         </View>
