@@ -11,6 +11,7 @@ export function Home({ navigation }: any) {
         <>
             <Header url={'www.google.com'} />
             <CardService />
+            <CardService />
 
             <View style={styles.container}>
                 {/* <Button title="aperte=me" onPress={() => navigation.navigate('Login')} /> */}

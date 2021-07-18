@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Button, Image, TouchableOpacity } from "react-native";
+import { View, Text, Button, Image, TouchableOpacity, Animated } from "react-native";
 import { backIcon, doneIcon, workBlackIcon } from "../../assets/icons";
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 
@@ -9,11 +9,13 @@ export function Work({ navigation }: any) {
 
     const LeftActions = () => {
         return (
-            <TouchableOpacity >
-                <View style={styles.buttonAdd}>
-                    <Image source={doneIcon} />
-                </View>
-            </TouchableOpacity>
+            <Animated.View>
+                <TouchableOpacity >
+                    <View style={styles.buttonAdd}>
+                        <Image source={doneIcon} />
+                    </View>
+                </TouchableOpacity>
+            </Animated.View>
         )
     }
 
@@ -35,7 +37,10 @@ export function Work({ navigation }: any) {
             </View>
             <View style={styles.content}>
 
-                <Swipeable renderRightActions={LeftActions}>
+                <Swipeable 
+                    overshootRight={false}
+                    renderRightActions={LeftActions}
+                >
                     <View style={styles.button}>
                         <View style={styles.icon}>
                             <Image source={workBlackIcon} />
@@ -46,7 +51,10 @@ export function Work({ navigation }: any) {
                     </View>
                 </Swipeable>
 
-                <Swipeable renderRightActions={LeftActions}>
+                <Swipeable 
+                    overshootRight={false}
+                    renderRightActions={LeftActions}
+                >
                     <View style={styles.button}>
                         <View style={styles.icon}>
                             <Image source={workBlackIcon} />
@@ -57,7 +65,10 @@ export function Work({ navigation }: any) {
                     </View>
                 </Swipeable>
 
-                <Swipeable renderRightActions={LeftActions}>
+                <Swipeable 
+                    overshootRight={false}
+                    renderRightActions={LeftActions}
+                >
                     <View style={styles.button}>
                         <View style={styles.icon}>
                             <Image source={workBlackIcon} />
@@ -68,7 +79,10 @@ export function Work({ navigation }: any) {
                     </View>
                 </Swipeable>
 
-                <Swipeable renderRightActions={LeftActions}>
+                <Swipeable 
+                    overshootRight={false}
+                    renderRightActions={LeftActions}
+                >
                     <View style={styles.button}>
                         <View style={styles.icon}>
                             <Image source={workBlackIcon} />
