@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image } from 'react-native';
+import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image, TouchableOpacity } from 'react-native';
 
 import { EmailIconPng, facebookIcon, googleIcon, linkedinIcon, LockIconPng } from "../../assets/icons";
 import { Button } from '../../components/button';
@@ -8,9 +8,7 @@ import { Input } from '../../components/Input';
 import { Logo } from '../../components/logo';
 import { styles } from './style';
 
-import { theme } from '../../global/styles/theme';
-
-export function Login() {
+export function Login({navigation}: any) {
 
     return (
         <View style={styles.container}>
@@ -38,9 +36,9 @@ export function Login() {
                                 <ButtonIcon icon={facebookIcon} />
                                 <ButtonIcon icon={linkedinIcon} />
                             </View>
-                            <View style={styles.viewSignOut}>
+                            <TouchableOpacity style={styles.viewSignOut} onPress={() => {navigation.navigate('RegisterS2')}}>
                                 <Text style={styles.signOut}>Faça seu cadastro!</Text>
-                            </View>
+                            </TouchableOpacity>
                         </>
                     </TouchableWithoutFeedback>
                 </KeyboardAvoidingView>

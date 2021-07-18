@@ -6,6 +6,11 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#E7E7EB',
     },
+
+    imageContainer: {
+        margin: 74
+    },
+    
     title: {
         fontSize: 25,
         color: '#5B687B',

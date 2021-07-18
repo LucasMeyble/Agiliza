@@ -16,7 +16,9 @@ export function RegisterS2() {
                 <KeyboardAvoidingView>
                     <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
                             <>
-                                <Logo />
+                                <View style={styles.imageContainer}>
+                                    <Logo />
+                                </View>
                                 <Text style={styles.title}>O que você deseja fazer?</Text>
                                 <View >
                                     <ButtonChoose title={"Sou um profissional"} icon={workIcon}/>
@@ -26,7 +28,6 @@ export function RegisterS2() {
                     </TouchableWithoutFeedback>
                 </KeyboardAvoidingView>
             </SafeAreaView>
-     
         </View >
     )
 
