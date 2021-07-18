@@ -15,6 +15,7 @@ import backIcon from './back.png';
 import doneIcon from './done.png';
 import workBlackIcon from './workBlack.png';
 import starIcon from './star.png';
+import closeIcon from './close.png';
 
 export { EmailIcon, 
     LockIcon,
@@ -31,4 +32,5 @@ export { EmailIcon,
     searchBlueIcon,
     backIcon,
     doneIcon,
-    workBlackIcon };
+    workBlackIcon,
+    closeIcon };
