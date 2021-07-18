@@ -9,12 +9,17 @@ import { Home } from '../screens/Home';
 import { Login } from '../screens/Login';
 import { Register } from '../screens/Register';
 import { RegisterS2 } from '../screens/RegisterStep2';
+import { RegisterS3 } from '../screens/RegisterStep3';
 
 export function StackRouts(){
     return(
         <Stack.Navigator
         headerMode = "none"
         >
+            <Stack.Screen
+                name="RegisterS3"
+                component={RegisterS3}
+            />
             <Stack.Screen
                 name="RegisterS2"
                 component={RegisterS2}
