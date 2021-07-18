@@ -25,7 +25,7 @@ export function NewCalled({ navigation }: any) {
                         setModalVisible(!modalVisible);
                     }}
                 >
-                    <ModalAdd />
+                    <ModalAdd navigation={navigation} setModalVisible={setModalVisible} modalVisible={modalVisible} />
                 </Modal>
             </View>
         </>
