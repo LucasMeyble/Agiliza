@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
     },
     
-    coment: {
+    comment: {
         marginTop: 10,
         marginHorizontal: 20,
     },
@@ -29,7 +29,7 @@ export const styles = StyleSheet.create({
         color: '#000000',
         fontWeight: 'bold',
     },
-    textClassifictaion: {
+    textClassification: {
         fontSize: 14,
         marginTop: 10,
         marginBottom: 30,
