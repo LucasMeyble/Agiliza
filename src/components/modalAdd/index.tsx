@@ -7,7 +7,7 @@ import { SvgUri } from 'react-native-svg'
 type Props = {
     modalVisible: boolean,
     setModalVisible: (visible: boolean) => void,
-    navigation: Object,
+    navigation: any,
 }
 
 
@@ -16,7 +16,7 @@ export function ModalAdd({ setModalVisible, modalVisible, navigation }: Props) {
 
     const handleClose = () => {
         setModalVisible(false);
-        navigation.navigate("Home")
+        navigation.goBack()
     }
 
     return (
