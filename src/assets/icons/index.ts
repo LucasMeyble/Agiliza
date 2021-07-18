@@ -11,6 +11,9 @@ import chatIcon from './chat.png';
 import profileIcon from './profile.png';
 import workIcon from './work.png';
 import searchBlueIcon from './searchBlue.png';
+import nextIcon from './nextIcon.png';
+import plusIcon from './plus.png';
+import uploadIcon from './uploadImg.png';
 import backIcon from './back.png';
 import doneIcon from './done.png';
 import workBlackIcon from './workBlack.png';
@@ -34,6 +37,9 @@ export { EmailIcon,
     profileIcon,
     workIcon,
     searchBlueIcon,
+    nextIcon,
+    plusIcon,
+    uploadIcon
     backIcon,
     doneIcon,
     workBlackIcon,
