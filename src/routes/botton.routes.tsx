@@ -1,6 +1,6 @@
 import React from "react";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";  
-import { Ionicons } from '@expo/vector-icons'; 
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import { Ionicons } from '@expo/vector-icons';
 
 const AppTab = createBottomTabNavigator()
 
@@ -10,14 +10,14 @@ import { NewCalled } from "../screens/NewCalled";
 import { Work } from "../screens/Work";
 import { Profile } from "../screens/Profile";
 
-export default function AuthRoutes(){
-    return(
+export default function AuthRoutes() {
+    return (
 
         <AppTab.Navigator
             screenOptions={({ route }) => ({
                 tabBarIcon: ({ color, size }) => {
                     let iconName: any;
-        
+
                     switch (route.name) {
                         case 'Home':
                             iconName = 'ios-home-outline';
@@ -33,38 +33,39 @@ export default function AuthRoutes(){
                             break;
                         case 'Profile':
                             iconName = 'person-outline';
-                        break;
-                        
+                            break;
+
                         default:
                             iconName = 'alert-circle-outline';
                             break;
                     }
-        
+
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
             })}
-                tabBarOptions={{
+            tabBarOptions={{
+                showLabel: false,
                 activeTintColor: '#000000',
                 inactiveTintColor: '#777',
             }}
         >
-            <AppTab.Screen 
+            <AppTab.Screen
                 name="Home"
                 component={Home}
             />
-            <AppTab.Screen 
+            <AppTab.Screen
                 name="SearchPro"
                 component={SearchPro}
             />
-            <AppTab.Screen 
+            <AppTab.Screen
                 name="NewCalled"
                 component={NewCalled}
             />
-            <AppTab.Screen 
+            <AppTab.Screen
                 name="Work"
                 component={Work}
             />
-            <AppTab.Screen 
+            <AppTab.Screen
                 name="Profile"
                 component={Profile}
             />

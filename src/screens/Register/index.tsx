@@ -18,37 +18,35 @@ export function Register() {
             <SafeAreaView>
                 <KeyboardAvoidingView>
                     <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
-                        <ScrollView>
-                            <>
+                        <>
+                            <View style={styles.imageContainer}>
                                 <Logo />
+                            </View>
+                            <View style={styles.header}>
                                 <Text style={styles.title}>Cadastro</Text>
                                 <Text style={styles.subTitle}>Faça seu cadastro para continuar</Text>
-                                <View >
-                                    <Input placeHolder={"Digite seu nome"} icon={profileIcon} />
-                                    <Input placeHolder={"Digite sua email"} icon={EmailIconPng} />
-                                    <Input placeHolder={"Digite sua senha"} icon={LockIconPng} />
-                                    <Input placeHolder={"Digite sua senha novamente"} icon={LockIconPng} />
-                                    <Button title={"Cadastrar"} />
+                            </View>
+                            <View>
+                                <Input placeHolder={"Digite seu nome"} icon={profileIcon} />
+                                <Input placeHolder={"Digite sua email"} icon={EmailIconPng} />
+                                <Input placeHolder={"Digite sua senha"} icon={LockIconPng} />
+                                <Input placeHolder={"Digite sua senha novamente"} icon={LockIconPng} />
+                                <Button title={"Cadastrar"} />
+                            </View>
+                            <View style={styles.Hr}>
+                                <View style={styles.background}>
+                                    <Text>Ou se preferir </Text>
                                 </View>
-                                <View style={styles.Hr}>
-                                    <View style={styles.background}>
-                                        <Text>Ou se preferir </Text>
-                                    </View>
-                                </View>
-                                <View style={styles.viewButtons}>
-                                    <ButtonIcon icon={googleIcon} />
-                                    <ButtonIcon icon={facebookIcon} />
-                                    <ButtonIcon icon={linkedinIcon} />
-                                </View>
-                                <View style={styles.viewSignOut}>
-                                    <Text style={styles.signOut}>Faça seu cadastro!</Text>
-                                </View>
-                            </>
-                        </ScrollView>
+                            </View>
+                            <View style={styles.viewButtons}>
+                                <ButtonIcon icon={googleIcon} />
+                                <ButtonIcon icon={facebookIcon} />
+                                <ButtonIcon icon={linkedinIcon} />
+                            </View>
+                        </>
                     </TouchableWithoutFeedback>
                 </KeyboardAvoidingView>
             </SafeAreaView>
-     
         </View >
     )
 

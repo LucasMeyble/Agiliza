@@ -8,7 +8,7 @@ import { styles } from './styles';
 
 
 
-export function RegisterS2() {
+export function RegisterS2({ navigation }: any) {
 
     return (
         <View style={styles.container}>
@@ -16,17 +16,18 @@ export function RegisterS2() {
                 <KeyboardAvoidingView>
                     <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
                             <>
-                                <Logo />
+                                <View style={styles.imageContainer}>
+                                    <Logo />
+                                </View>
                                 <Text style={styles.title}>O que você deseja fazer?</Text>
                                 <View >
-                                    <ButtonChoose title={"Sou um profissional"} icon={workIcon}/>
-                                    <ButtonChoose title={"Estou a procura de um profissional" } icon={searchBlueIcon}/>
+                                    <ButtonChoose title={"Sou um profissional"} icon={workIcon} navigation={navigation} />
+                                    <ButtonChoose title={"Estou a procura de um profissional" } icon={searchBlueIcon} navigation={navigation} />
                                 </View>
                             </>
                     </TouchableWithoutFeedback>
                 </KeyboardAvoidingView>
             </SafeAreaView>
-     
         </View >
     )
 

@@ -14,8 +14,15 @@ import searchBlueIcon from './searchBlue.png';
 import nextIcon from './nextIcon.png';
 import plusIcon from './plus.png';
 import uploadIcon from './uploadImg.png';
-
+import backIcon from './back.png';
+import doneIcon from './done.png';
+import workBlackIcon from './workBlack.png';
 import starIcon from './star.png';
+import closeIcon from './close.png';
+import cameraIcon from './camera.png';
+import videoCamIcon from './videocam.png';
+import galeryIcon from './galery.png';
+import moreIcon from './more.png';
 
 export { EmailIcon, 
     LockIcon,
@@ -33,4 +40,11 @@ export { EmailIcon,
     nextIcon,
     plusIcon,
     uploadIcon
-};
+    backIcon,
+    doneIcon,
+    workBlackIcon,
+    closeIcon,
+    cameraIcon,
+    videoCamIcon,
+    galeryIcon,
+    moreIcon };

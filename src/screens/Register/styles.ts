@@ -6,6 +6,15 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#E7E7EB',
     },
+
+    imageContainer: {
+        marginTop: 74
+    },
+
+    header: {
+        marginTop: 40
+    },
+
     title: {
         fontSize: 35,
         color: '#5B687B',
@@ -16,6 +25,7 @@ export const styles = StyleSheet.create({
         color: '#5B687B',
         textAlign: 'center',
     },
+
     Hr: {
         marginTop: 50,
         marginHorizontal: 20,
@@ -31,7 +41,7 @@ export const styles = StyleSheet.create({
     viewButtons: {
         flexDirection: 'row',
         justifyContent: 'center',
-        marginTop: 50,
+        marginTop: 23,
     },
     signOut: {
         fontSize: 15,
