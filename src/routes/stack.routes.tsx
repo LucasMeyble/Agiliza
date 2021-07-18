@@ -15,13 +15,13 @@ export function StackRouts(){
         <Stack.Navigator
         headerMode = "none"
         >
-            <Stack.Screen
-                name="RegisterS2"
-                component={RegisterS2}
-            />
             <Stack.Screen 
                 name="Home"
                 component={AuthRoutes}
+            />
+            <Stack.Screen
+                name="RegisterS2"
+                component={RegisterS2}
             />
             <Stack.Screen 
                 name="Login"
