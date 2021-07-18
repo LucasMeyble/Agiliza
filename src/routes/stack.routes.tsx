@@ -18,7 +18,11 @@ export function StackRouts() {
         <Stack.Navigator
             headerMode="none"
         >
-             <Stack.Screen
+            <Stack.Screen
+                name="Home"
+                component={AuthRoutes}
+            />
+            <Stack.Screen
                 name="RegisterS5"
                 component={RegisterS5}
             />
@@ -29,10 +33,6 @@ export function StackRouts() {
             <Stack.Screen
                 name="RegisterS3"
                 component={RegisterS3}
-            />
-            <Stack.Screen
-                name="Home"
-                component={AuthRoutes}
             />
             <Stack.Screen
                 name="Login"

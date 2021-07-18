@@ -39,7 +39,7 @@ export { EmailIcon,
     searchBlueIcon,
     nextIcon,
     plusIcon,
-    uploadIcon
+    uploadIcon,
     backIcon,
     doneIcon,
     workBlackIcon,
