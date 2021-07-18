@@ -10,8 +10,10 @@ import searchIcon from './search.png';
 import chatIcon from './chat.png';
 import profileIcon from './profile.png';
 import workIcon from './work.png';
-import  searchBlueIcon from './searchBlue.png';
-
+import searchBlueIcon from './searchBlue.png';
+import nextIcon from './nextIcon.png';
+import plusIcon from './plus.png';
+import uploadIcon from './uploadImg.png';
 
 import starIcon from './star.png';
 
@@ -27,4 +29,8 @@ export { EmailIcon,
     starIcon,
     profileIcon,
     workIcon,
-    searchBlueIcon};
+    searchBlueIcon,
+    nextIcon,
+    plusIcon,
+    uploadIcon
+};
