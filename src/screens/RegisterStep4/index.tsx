@@ -9,7 +9,7 @@ import { styles } from './styles';
 
 
 
-export function RegisterS4() {
+export function RegisterS4({ navigation }: any) {
 
     return (
         <View style={styles.container}>
@@ -17,20 +17,31 @@ export function RegisterS4() {
                 <KeyboardAvoidingView>
                     <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
                             <>
-                                <Logo />
-                                <Text style={styles.title}>{`Por favor\n Complemente seu cadastro\n2/3`}</Text>
-                                <Text style={styles.subTitle}>Dados Profissionais</Text>
-                                <View style={styles.containerRegister}> 
-                                    <InputRegister  placeHolder={"Estado"}  />
+                            <View style={styles.logoContainer}>
+                                    <Logo />
                                 </View>
-                                <View style={styles.containerRegister}>
-                                    <InputRegister placeHolder={"Cidade"}  />
+
+                                <View style={styles.titleContainer}>
+                                    <Text style={styles.title}>{`Por favor\n Complemente seu cadastro\n2/3`}</Text>
                                 </View>
-                                <View style={styles.containerRegister}>
-                                    <InputRegister placeHolder={"Bairro"}  />
+
+                                <View style={styles.subTitleContainer}>
+                                    <Text style={styles.subTitle}>Dados Profissionais</Text>
                                 </View>
+                                <View style={styles.containerInputRegister}>
+                                    <View style={styles.containerRegister}> 
+                                        <InputRegister  placeHolder={"Profissão"}  />
+                                    </View>
+                                    <View style={styles.containerRegister}>
+                                        <InputRegister placeHolder={"Anos de Exp."}  />
+                                    </View>
+                                    <View style={styles.containerRegister}>
+                                        <InputRegister placeHolder={"Empresa"}  />
+                                    </View>
+                                </View>
+                                
                                 < View style={styles.button}>
-                                         <ButtonRegister  icon={nextIcon}/>
+                                         <ButtonRegister  icon={nextIcon} onPress={() => {navigation.navigate('RegisterS5')}}/>
                                 </ View>
                             </>
                     </TouchableWithoutFeedback>

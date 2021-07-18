@@ -25,6 +25,15 @@ export const styles = StyleSheet.create({
         paddingTop: 20,
         alignItems: 'center'
     },
+    logoContainer: {
+        paddingTop: 120
+    },
+    titleContainer: {
+        paddingTop: 60
+    },
+    subTitleContainer: {
+        paddingTop: 40
+    },
     buttonRegister: {
        paddingTop: 150
     }

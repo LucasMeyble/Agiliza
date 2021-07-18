@@ -10,7 +10,7 @@ import { styles } from './styles';
 
 
 
-export function RegisterS5() {
+export function RegisterS5({ navigation }: any) {
 
     return (
         <View style={styles.container}>
@@ -18,9 +18,17 @@ export function RegisterS5() {
                 <KeyboardAvoidingView>
                     <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
                             <>
-                                <Logo />
-                                <Text style={styles.title}>{`Por favor\n Complemente seu cadastro\n3/3`}</Text>
-                                <Text style={styles.subTitle}>Qualificacoes</Text>
+                            <View style={styles.logoContainer}>
+                                    <Logo />
+                                </View>
+
+                                <View style={styles.titleContainer}>
+                                    <Text style={styles.title}>{`Por favor\n Complemente seu cadastro\n3/3`}</Text>
+                                </View>
+
+                                <View style={styles.subTitleContainer}>
+                                    <Text style={styles.subTitle}>Qualificações</Text>
+                                </View>
                                 <View style={styles.containerRegister}> 
                                     <InputRegister icon={uploadIcon} placeHolder={"Adicione aqui suas\n competências e/ou certificados"}  />
                                 </View>
@@ -28,7 +36,7 @@ export function RegisterS5() {
                                          <ButtonRegister  icon={plusIcon}/>
                                 </ View>
                                 < View style={styles.buttonRegister}>
-                                     <Button title={"Concluir Cadastro"} />
+                                     <Button title={"Concluir Cadastro"} onPress={() => {navigation.navigate('Home')}}/>
                                 </ View>
 
                             </>

@@ -18,6 +18,22 @@ export const styles = StyleSheet.create({
         color: '#5B687B',
         textAlign: 'center',
     },
+    logoContainer: {
+        paddingTop: 120
+    },
+    titleContainer: {
+        paddingTop: 60
+    },
+    subTitleContainer: {
+        paddingTop: 40
+    },
+    inputContainer: {
+        paddingTop: 30
+    },
+    button: {
+        paddingTop: 100,
+        paddingLeft:280
+    }
 
 
     

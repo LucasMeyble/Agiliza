@@ -1,17 +1,16 @@
 import React from "react";
-import { View, TouchableOpacity, Text, ImageSourcePropType, Image} from "react-native";
+import { View, TouchableOpacity, Text, ImageSourcePropType, Image, TouchableOpacityProps} from "react-native";
 import { styles } from "./style";
 
-type Props = {
+type Props = TouchableOpacityProps & {
     title: string,
-    icon: ImageSourcePropType,
-    navigation: any
+    icon: ImageSourcePropType
 }
 
-export function ButtonChoose({ title, icon, navigation }: Props) {
+export function ButtonChoose({ title, icon, ...rest }: Props) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Register') }}>
+            <TouchableOpacity style={styles.button} {...rest} >
                 <View style={styles.iconContainer}>
                     <Image style={styles.icon} source={ icon }   />
                 </View>

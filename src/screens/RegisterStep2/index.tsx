@@ -21,8 +21,8 @@ export function RegisterS2({ navigation }: any) {
                                 </View>
                                 <Text style={styles.title}>O que você deseja fazer?</Text>
                                 <View >
-                                    <ButtonChoose title={"Sou um profissional"} icon={workIcon} navigation={navigation} />
-                                    <ButtonChoose title={"Estou a procura de um profissional" } icon={searchBlueIcon} navigation={navigation} />
+                                    <ButtonChoose title={"Sou um profissional"} icon={workIcon} onPress={() => {navigation.navigate('RegisterS3')}} />
+                                    <ButtonChoose title={"Estou a procura de um profissional" } icon={searchBlueIcon} onPress={() => {navigation.navigate('Home')}} />
                                 </View>
                             </>
                     </TouchableWithoutFeedback>

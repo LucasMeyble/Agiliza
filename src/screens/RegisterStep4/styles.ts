@@ -22,9 +22,22 @@ export const styles = StyleSheet.create({
         paddingTop: 30
     },
     button: {
-        paddingTop: 120,
+        paddingTop: 160,
         paddingLeft:280
+    },
+    logoContainer: {
+        paddingTop: 120
+    },
+    titleContainer: {
+        paddingTop: 60
+    },
+    subTitleContainer: {
+        paddingTop: 40
+    },
+    containerInputRegister: {
+
     }
+
 
 
     

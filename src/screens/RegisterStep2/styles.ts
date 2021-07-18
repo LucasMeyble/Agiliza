@@ -8,7 +8,8 @@ export const styles = StyleSheet.create({
     },
 
     imageContainer: {
-        margin: 74
+        margin: 74,
+        paddingTop: 60
     },
     
     title: {

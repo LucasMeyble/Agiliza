@@ -8,7 +8,8 @@ export const styles = StyleSheet.create({
     },
 
     imageContainer: {
-        marginTop: 74
+        marginTop: 74,
+        paddingTop: 60
     },
 
     header: {
@@ -19,6 +20,7 @@ export const styles = StyleSheet.create({
         fontSize: 35,
         color: '#5B687B',
         textAlign: 'center',
+        paddingTop: 20
     },
     subTitle: {
         fontSize: 18,

@@ -10,7 +10,7 @@ import { styles } from './styles';
 
 
 
-export function Register() {
+export function Register({navigation}: any) {
 
     return (
         <View style={styles.container}>
@@ -31,7 +31,7 @@ export function Register() {
                                 <Input placeHolder={"Digite sua email"} icon={EmailIconPng} />
                                 <Input placeHolder={"Digite sua senha"} icon={LockIconPng} />
                                 <Input placeHolder={"Digite sua senha novamente"} icon={LockIconPng} />
-                                <Button title={"Cadastrar"} />
+                                <Button title={"Cadastrar"} onPress={() => {navigation.navigate('RegisterS2')}} />
                             </View>
                             <View style={styles.Hr}>
                                 <View style={styles.background}>

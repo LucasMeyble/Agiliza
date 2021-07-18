@@ -19,33 +19,34 @@ export function StackRouts() {
             headerMode="none"
         >
             <Stack.Screen
-                name="Home"
-                component={AuthRoutes}
+                name="Login"
+                component={Login}
             />
             <Stack.Screen
-                name="RegisterS5"
-                component={RegisterS5}
+                name="Register"
+                component={Register}
+            />
+           <Stack.Screen
+               name="RegisterS2"
+               component={RegisterS2}
+           />
+            <Stack.Screen
+                name="RegisterS3"
+                component={RegisterS3}
             />
             <Stack.Screen
                 name="RegisterS4"
                 component={RegisterS4}
             />
             <Stack.Screen
-                name="RegisterS3"
-                component={RegisterS3}
+                name="RegisterS5"
+                component={RegisterS5}
             />
-            <Stack.Screen
-                name="Login"
-                component={Login}
+             <Stack.Screen
+                name="Home"
+                component={AuthRoutes}
             />
-            <Stack.Screen
-                name="RegisterS2"
-                component={RegisterS2}
-            />
-            <Stack.Screen
-                name="Register"
-                component={Register}
-            />
+            
         </Stack.Navigator>
     )
 }

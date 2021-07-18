@@ -36,7 +36,7 @@ export function Login({navigation}: any) {
                                 <ButtonIcon icon={facebookIcon} />
                                 <ButtonIcon icon={linkedinIcon} />
                             </View>
-                            <TouchableOpacity style={styles.viewSignOut} onPress={() => {navigation.navigate('RegisterS2')}}>
+                            <TouchableOpacity style={styles.viewSignOut} onPress={() => {navigation.navigate('Register')}}>
                                 <Text style={styles.signOut}>Faça seu cadastro!</Text>
                             </TouchableOpacity>
                         </>

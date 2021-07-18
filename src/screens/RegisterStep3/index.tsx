@@ -1,14 +1,15 @@
 import React from 'react';
 import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image, ScrollView } from 'react-native';
 
-import { workIcon, searchBlueIcon  } from "../../assets/icons";
+import { workIcon, searchBlueIcon, nextIcon  } from "../../assets/icons";
+import { ButtonRegister } from '../../components/buttonRegister';
 import { InputRegister } from '../../components/InputRegister';
 import { Logo } from '../../components/logo';
 import { styles } from './styles';
 
 
 
-export function RegisterS3() {
+export function RegisterS3({ navigation }: any) {
 
     return (
         <View style={styles.container}>
@@ -16,16 +17,28 @@ export function RegisterS3() {
                 <KeyboardAvoidingView>
                     <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
                             <>
-                                <Logo />
-                                <Text style={styles.title}>{`Por favor\n Complemente seu cadastro\n1/3`}</Text>
-                                <Text style={styles.subTitle}>Endereço</Text>
-                                <View> 
+                                <View style={styles.logoContainer}>
+                                    <Logo />
+                                </View>
+
+                                <View style={styles.titleContainer}>
+                                    <Text style={styles.title}>{`Por favor\n Complemente seu cadastro\n1/3`}</Text>
+                                </View>
+
+                                <View style={styles.subTitleContainer}>
+                                    <Text style={styles.subTitle}>Endereço</Text>
+                                </View>
+                                
+                                <View style={styles.inputContainer}> 
                                     <InputRegister placeHolder={"Estado"}  />
                                     <InputRegister placeHolder={"Cidade"}  />
                                     <InputRegister placeHolder={"Bairro"}  />
                                     <InputRegister placeHolder={"Rua"}  />
                                     <InputRegister placeHolder={"Número"}  />
                                 </View>
+                                < View style={styles.button}>
+                                         <ButtonRegister  icon={nextIcon} onPress={() => {navigation.navigate('RegisterS4')}}/>
+                                </ View>
                             </>
                     </TouchableWithoutFeedback>
                 </KeyboardAvoidingView>
