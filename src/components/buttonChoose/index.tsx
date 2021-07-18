@@ -4,13 +4,14 @@ import { styles } from "./style";
 
 type Props = {
     title: string,
-    icon: ImageSourcePropType
+    icon: ImageSourcePropType,
+    navigation: any
 }
 
-export function ButtonChoose({ title, icon }: Props) {
+export function ButtonChoose({ title, icon, navigation }: Props) {
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button} onPress={() => { }}>
+            <TouchableOpacity style={styles.button} onPress={() => { navigation.navigate('Register') }}>
                 <View style={styles.iconContainer}>
                     <Image style={styles.icon} source={ icon }   />
                 </View>
