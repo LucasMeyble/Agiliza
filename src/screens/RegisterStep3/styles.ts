@@ -18,11 +18,7 @@ export const styles = StyleSheet.create({
         color: '#5B687B',
         textAlign: 'center',
     },
-    containerInput: {
-        backgroundColor: '#E7E7EB',
-        justifyContent: 'center',
-        textAlign: 'center'
-    }
+
 
     
 })
