@@ -10,7 +10,7 @@ export const styles = StyleSheet.create({
     image: {
         flex: 1,
         justifyContent: "center"
-      },
+    },
     content: {
         backgroundColor: "#fff",
         width: '90%',
@@ -28,6 +28,13 @@ export const styles = StyleSheet.create({
         paddingLeft: 25,
         fontSize: 20,
         color: "#000",  
+    },
+    about: {
+        height: 70,
+        paddingHorizontal: 30,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
     },
     subtitle: {
         fontSize: 16,

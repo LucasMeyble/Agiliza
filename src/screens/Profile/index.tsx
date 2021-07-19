@@ -30,28 +30,20 @@ export function Profile({ navigation }: any) {
                         </View>
 
                         <View style={styles.infoUser}>
-                            <Text style={styles.titleInfo}>Dados Pessoais</Text>
+                            <Text style={styles.titleInfo}>Localização</Text>
                         </View>
 
-                        <ItemList label={"Email"} value={"alvesjonatas99@gmail.com"} />
-                        <ItemList label={"Telefone"} value={"(81) 99252-8586"} />
-                        <ItemList label={"Endereço"} value={"Rua Inácia Maria de Arruda"} />
                         <ItemList label={"Cidade"} value={"Bezerros - PE"} />
 
                         <View style={styles.infoUser}>
-                            <Text style={styles.titleInfo}>Dados Profissionais</Text>
+                            <Text style={styles.titleInfo}>Sobre Jônatas Alves</Text>
                         </View>
 
-                        <ItemList label={"Profissão"} value={"Software Engineer"} />
-                        <ItemList label={"Anos Exp."} value={"3 Anos"} />
-                        <ItemList label={"Empresa"} value={"Adasi Software"} />
-
-                        <View style={styles.infoUser}>
-                            <Text style={styles.titleInfo}>Certificações</Text>
+                        <View style={styles.about}>
+                            <Text>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis fugiat.
+                            </Text>
                         </View>
-
-                        <ItemCertificated label={"IBM"} value={"Data Science"} number={"nº 1516151515151"} />
-                        <ItemCertificated label={"RocketSeat"} value={"React Native"} number={"nº 1516151515151"} />
 
                         <View style={styles.infoUser}>
                             <Text style={styles.titleInfo}>Classificações</Text>
