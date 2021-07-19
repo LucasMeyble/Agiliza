@@ -32,7 +32,8 @@ export const styles = StyleSheet.create({
     },
     button: {
         paddingTop: 100,
-        paddingLeft:280
+        paddingLeft:85,
+        flexDirection: 'row'
     }
 
 

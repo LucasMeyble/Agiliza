@@ -25,6 +25,11 @@ export const styles = StyleSheet.create({
         paddingTop: 20,
         alignItems: 'center'
     },
+    buttonNavigate: {
+        paddingTop: 100,
+        paddingLeft:80,
+        flexDirection: 'row'
+    },
     logoContainer: {
         paddingTop: 120
     },
