@@ -1,6 +1,5 @@
 import React from 'react';
-import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image, TouchableOpacity } from 'react-native';
-
+import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image, TouchableOpacity, ScrollView } from 'react-native';
 import { EmailIconPng, facebookIcon, googleIcon, linkedinIcon, LockIconPng } from "../../assets/icons";
 import { Button } from '../../components/button';
 import { ButtonIcon } from '../../components/buttonIcon';
@@ -11,6 +10,7 @@ import { styles } from './style';
 export function Login({ navigation }: any) {
 
     return (
+        <ScrollView>
         <View style={styles.container}>
             <SafeAreaView>
                 <KeyboardAvoidingView>
@@ -45,6 +45,7 @@ export function Login({ navigation }: any) {
                 </KeyboardAvoidingView>
             </SafeAreaView>
         </View >
+        </ScrollView>
     )
 
 }

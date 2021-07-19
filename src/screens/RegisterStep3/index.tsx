@@ -22,7 +22,7 @@ export function RegisterS3({ navigation }: any) {
                                 </View>
 
                                 <View style={styles.titleContainer}>
-                                    <Text style={styles.title}>{`Por favor\n Complemente seu cadastro\n1/3`}</Text>
+                                    <Text style={styles.title}>{`Etapa 1/3\nComplete seu cadastro `}</Text>
                                 </View>
 
                                 <View style={styles.subTitleContainer}>
@@ -32,19 +32,15 @@ export function RegisterS3({ navigation }: any) {
                                 <View style={styles.inputContainer}> 
                                     <InputRegister placeHolder={"Estado"}  />
                                     <InputRegister placeHolder={"Cidade"}  />
-                                    <InputRegister placeHolder={"Bairro"}  />
-                                    <InputRegister placeHolder={"Rua"}  />
-                                    <InputRegister placeHolder={"Número"}  />
                                 </View>
                                 < View style={styles.button}>
-                                         <ButtonRegister  icon={backingIcon} onPress={() => {navigation.navigate('RegisterS2')}}/>
-                                         <ButtonRegister  icon={nextIcon} onPress={() => {navigation.navigate('RegisterS4')}}/>
+                                    <ButtonRegister  icon={backingIcon} onPress={() => {navigation.navigate('RegisterS2')}}/>
+                                    <ButtonRegister  icon={nextIcon} onPress={() => {navigation.navigate('RegisterS4')}}/>
                                 </ View>
                             </>
                     </TouchableWithoutFeedback>
                 </KeyboardAvoidingView>
             </SafeAreaView>
-     
         </View >
     )
 
