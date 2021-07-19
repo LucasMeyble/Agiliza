@@ -1,19 +1,18 @@
 import React from "react";
-import { View, TouchableOpacity, Text, TextInput, Image } from "react-native";
+import { View, TouchableOpacity, Text, TextInput, Image, TouchableOpacityProps } from "react-native";
 import { styles } from "./style";
 import { searchIcon } from "../../assets/icons";
 import { SvgUri } from 'react-native-svg'
 
 
-export function Search() {
+export function Search({...rest}: TouchableOpacityProps) {
     return (
-        <View style={styles.container}>
+        <TouchableOpacity style={styles.container} {...rest}>
             <Image style={styles.icon} source={searchIcon} />
-            <TextInput
-                style={styles.input}
-                placeholder={"Search"}
-            />
-        </View>
+            <View style={styles.textContainer}>
+                <Text style={styles.text}>Search</Text>
+            </View>
+        </TouchableOpacity>
 
 
     )

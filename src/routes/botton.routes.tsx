@@ -5,7 +5,6 @@ import { Ionicons } from '@expo/vector-icons';
 const AppTab = createBottomTabNavigator()
 
 import { Home } from "../screens/Home";
-import { SearchPro } from "../screens/SearchPro";
 import { NewCalled } from "../screens/NewCalled";
 import { Work } from "../screens/Work";
 import { Profile } from "../screens/Profile";

@@ -11,14 +11,19 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         flexDirection:'row',
     },
-    input: {
-        height: 40,
-        marginLeft: 15,
+    textContainer: {
+        marginLeft: 10
+        
     },
+
+    text: {
+        color: '#8E8E8E'
+    },
+
     icon: {
         marginLeft: 15,
         width: 17,
         height: 17,
     }
-   
+    
 })

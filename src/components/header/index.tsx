@@ -8,10 +8,10 @@ import { Search } from "../barSearch";
 
 type Props = {
     url: string,
-
+    navigation: any
 }
 
-export function Header({ url }: Props) {
+export function Header({ url, navigation }: Props) {
     return (
         <View style={styles.container}>
             <View style={styles.avatar}>
@@ -23,7 +23,7 @@ export function Header({ url }: Props) {
             </View>
 
 
-            <Search />
+            <Search onPress={() => {navigation.navigate('Search')}}/>
 
             <Image style={styles.icon} source={chatIcon} />
         </View>

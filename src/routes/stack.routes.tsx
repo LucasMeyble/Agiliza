@@ -10,6 +10,7 @@ import { Register } from '../screens/Register';
 import { RegisterS2 } from '../screens/RegisterStep2';
 import { RegisterS3 } from '../screens/RegisterStep3';
 import { RegisterS4 } from '../screens/RegisterStep4';
+import { Search } from '../screens/Search';
 
 export function StackRouts() {
     return (
@@ -39,6 +40,10 @@ export function StackRouts() {
             <Stack.Screen
                 name="Home"
                 component={AuthRoutes}
+            />
+            <Stack.Screen
+                name="Search"
+                component={Search}
             />
 
         </Stack.Navigator>
