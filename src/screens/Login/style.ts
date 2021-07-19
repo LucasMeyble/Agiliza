@@ -41,6 +41,7 @@ export const styles = StyleSheet.create({
     },
     signOut: {
         fontSize: 18,
+        textAlign: 'center',
     },
     viewSignOut: {
         flexDirection: 'row',

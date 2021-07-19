@@ -8,7 +8,7 @@ import { Input } from '../../components/Input';
 import { Logo } from '../../components/logo';
 import { styles } from './style';
 
-export function Login({navigation}: any) {
+export function Login({ navigation }: any) {
 
     return (
         <View style={styles.container}>
@@ -20,11 +20,11 @@ export function Login({navigation}: any) {
                                 <Logo />
                             </View>
                             <Text style={styles.title}>Seja bem vindo!</Text>
-                            <Text style={styles.subTitle}>Logue com sua conta</Text>
+                            <Text style={styles.subTitle}>Digite suas credenciais</Text>
                             <View >
                                 <Input placeHolder={"Digite seu Email"} icon={EmailIconPng} />
                                 <Input placeHolder={"Digite sua senha"} icon={LockIconPng} />
-                                <Button title={"Login"} />
+                                <Button title={"Acessar"} />
                             </View>
                             <View style={styles.Hr}>
                                 <View style={styles.background}>
@@ -36,8 +36,9 @@ export function Login({navigation}: any) {
                                 <ButtonIcon icon={facebookIcon} />
                                 <ButtonIcon icon={linkedinIcon} />
                             </View>
-                            <TouchableOpacity style={styles.viewSignOut} onPress={() => {navigation.navigate('Register')}}>
-                                <Text style={styles.signOut}>Faça seu cadastro!</Text>
+
+                            <TouchableOpacity style={styles.viewSignOut} onPress={() => { navigation.navigate('Register') }}>
+                                <Text style={styles.signOut}>Não tem cadastro? {'\n'} Cadastre-se</Text>
                             </TouchableOpacity>
                         </>
                     </TouchableWithoutFeedback>
