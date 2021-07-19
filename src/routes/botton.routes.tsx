@@ -22,9 +22,6 @@ export default function AuthRoutes() {
                         case 'Home':
                             iconName = 'ios-home-outline';
                             break;
-                        case 'SearchPro':
-                            iconName = 'search-outline';
-                            break;
                         case 'NewCalled':
                             iconName = 'ios-duplicate-outline';
                             break;
@@ -52,10 +49,6 @@ export default function AuthRoutes() {
             <AppTab.Screen
                 name="Home"
                 component={Home}
-            />
-            <AppTab.Screen
-                name="SearchPro"
-                component={SearchPro}
             />
             <AppTab.Screen
                 name="NewCalled"
