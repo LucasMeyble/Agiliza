@@ -3,7 +3,6 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
 
     container: {
-       
       marginTop:50,
       paddingHorizontal: 50,
     },
@@ -27,31 +26,21 @@ export const styles = StyleSheet.create({
     },
     textButton: {
         color: "#4169E1",
-        fontSize: 18,
-        marginLeft:30
+        fontSize: 16,
+        marginLeft: 10
     },
     icon: {
-        marginTop:30,
-        marginLeft: 30,
-        marginRight: 15,
         width: 25,
         height: 23.75,
         
     },
     iconContainer:{
+        alignItems: "center",
+        justifyContent: "center",
         height:82,
-        marginBottom: 1,
         width:'30%',
-        borderRadius: 0,
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 30,
-        },
-        shadowOpacity: 0.10,
-        shadowRadius: 4.65,
-
-        elevation: 1
+        borderRightColor:'#4169E1',
+        borderRightWidth:1,
     },
     textContainer: {
         width: '70%'

@@ -5,7 +5,6 @@ const Stack = createStackNavigator();
 
 import AuthRoutes from './botton.routes';
 
-import { Home } from '../screens/Home';
 import { Login } from '../screens/Login';
 import { Register } from '../screens/Register';
 import { RegisterS2 } from '../screens/RegisterStep2';
@@ -26,10 +25,10 @@ export function StackRouts() {
                 name="Register"
                 component={Register}
             />
-           <Stack.Screen
-               name="RegisterS2"
-               component={RegisterS2}
-           />
+            <Stack.Screen
+                name="RegisterS2"
+                component={RegisterS2}
+            />
             <Stack.Screen
                 name="RegisterS3"
                 component={RegisterS3}
@@ -42,11 +41,11 @@ export function StackRouts() {
                 name="RegisterS5"
                 component={RegisterS5}
             />
-             <Stack.Screen
+            <Stack.Screen
                 name="Home"
                 component={AuthRoutes}
             />
-            
+
         </Stack.Navigator>
     )
 }
