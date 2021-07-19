@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image, ScrollView } from 'react-native';
 
-import {  plusIcon, uploadIcon  } from "../../assets/icons";
+import {  plusIcon, uploadIcon,backingIcon,finishIcon  } from "../../assets/icons";
 import { InputRegister } from '../../components/InputRegister';
 import { ButtonRegister } from '../../components/buttonRegister';
 import { Button } from '../../components/button';
@@ -35,10 +35,10 @@ export function RegisterS5({ navigation }: any) {
                                 < View style={styles.button}>
                                          <ButtonRegister  icon={plusIcon}/>
                                 </ View>
-                                < View style={styles.buttonRegister}>
-                                     <Button title={"Concluir Cadastro"} onPress={() => {navigation.navigate('Home')}}/>
+                                < View style={styles.buttonNavigate}>
+                                        <ButtonRegister  icon={backingIcon} onPress={() => {navigation.navigate('RegisterS4')}}/>
+                                        <ButtonRegister  icon={finishIcon} onPress={() => {navigation.navigate('Home')}}/>
                                 </ View>
-
                             </>
                     </TouchableWithoutFeedback>
                 </KeyboardAvoidingView>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image, ScrollView } from 'react-native';
 
-import { workIcon, nextIcon  } from "../../assets/icons";
+import { backingIcon, nextIcon  } from "../../assets/icons";
 import { InputRegister } from '../../components/InputRegister';
 import { ButtonRegister } from '../../components/buttonRegister';
 import { Logo } from '../../components/logo';
@@ -39,9 +39,11 @@ export function RegisterS4({ navigation }: any) {
                                         <InputRegister placeHolder={"Empresa"}  />
                                     </View>
                                 </View>
+
                                 
                                 < View style={styles.button}>
-                                         <ButtonRegister  icon={nextIcon} onPress={() => {navigation.navigate('RegisterS5')}}/>
+                                        <ButtonRegister  icon={backingIcon} onPress={() => {navigation.navigate('RegisterS3')}}/>
+                                        <ButtonRegister  icon={nextIcon} onPress={() => {navigation.navigate('RegisterS5')}}/>
                                 </ View>
                             </>
                     </TouchableWithoutFeedback>

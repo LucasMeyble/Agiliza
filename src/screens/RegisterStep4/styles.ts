@@ -22,8 +22,9 @@ export const styles = StyleSheet.create({
         paddingTop: 30
     },
     button: {
-        paddingTop: 160,
-        paddingLeft:280
+        paddingTop: 100,
+        paddingLeft:80,
+        flexDirection: 'row'
     },
     logoContainer: {
         paddingTop: 120
@@ -36,7 +37,8 @@ export const styles = StyleSheet.create({
     },
     containerInputRegister: {
 
-    }
+    },
+
 
 
 

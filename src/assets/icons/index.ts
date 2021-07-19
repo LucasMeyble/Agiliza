@@ -23,6 +23,8 @@ import cameraIcon from './camera.png';
 import videoCamIcon from './videocam.png';
 import galeryIcon from './galery.png';
 import moreIcon from './more.png';
+import backingIcon from './backing.png';
+import finishIcon from './finished.png';
 
 export { EmailIcon, 
     LockIcon,
@@ -47,4 +49,7 @@ export { EmailIcon,
     cameraIcon,
     videoCamIcon,
     galeryIcon,
-    moreIcon };
+    moreIcon,
+    backingIcon,
+    finishIcon
+};

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView, KeyboardAvoidingView, TouchableWithoutFeedback, Keyboard, Image, ScrollView } from 'react-native';
 
-import { workIcon, searchBlueIcon, nextIcon  } from "../../assets/icons";
+import { workIcon, backingIcon, nextIcon  } from "../../assets/icons";
 import { ButtonRegister } from '../../components/buttonRegister';
 import { InputRegister } from '../../components/InputRegister';
 import { Logo } from '../../components/logo';
@@ -37,6 +37,7 @@ export function RegisterS3({ navigation }: any) {
                                     <InputRegister placeHolder={"Número"}  />
                                 </View>
                                 < View style={styles.button}>
+                                         <ButtonRegister  icon={backingIcon} onPress={() => {navigation.navigate('RegisterS2')}}/>
                                          <ButtonRegister  icon={nextIcon} onPress={() => {navigation.navigate('RegisterS4')}}/>
                                 </ View>
                             </>
