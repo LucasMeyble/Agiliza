@@ -1,8 +1,9 @@
 import React from "react";
 import { Image, TextInput, View, ImageSourcePropType, Text, TouchableOpacity } from "react-native";
 import { styles } from "./style";
-import { cameraIcon, closeIcon, EmailIcon, EmailIconPng, galeryIcon, moreIcon, videoCamIcon } from "../../assets/icons";
-import { SvgUri } from 'react-native-svg'
+import { closeIcon } from "../../assets/icons";
+import { SvgUri } from 'react-native-svg';
+import { CardService } from "../../components/cardService";
 
 type Props = {
     modalVisible: boolean,
@@ -22,16 +23,36 @@ export function ModalSearch({ setModalVisible, modalVisible, navigation }: Props
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <TouchableOpacity onPress={handleClose}>
-                    <Image style={styles.icon} source={closeIcon} />
-                </TouchableOpacity>
-                <View style={styles.inputContainer}>
-                    <TextInput style={styles.input} placeholder={"Search"}/>
+                <View style={styles.subHeader}>
+                    <TouchableOpacity onPress={handleClose}>
+                        <Image style={styles.icon} source={closeIcon} />
+                    </TouchableOpacity>
+                    <View style={styles.inputContainer}>
+                        <TextInput style={styles.input} placeholder={"Search"}/>
+                    </View>
+                </View>
+                <View style={styles.options}>
+                    <TouchableOpacity>
+                        <Text>
+                            Principais
+                        </Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <Text>
+                            Contas
+                        </Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity>
+                        <Text>
+                            Serviços
+                        </Text>
+                    </TouchableOpacity>
                 </View>
             </View>
 
             <View style={styles.content}>
-                
+                <CardService />
+                <CardService />
             </View>
         </View >
 

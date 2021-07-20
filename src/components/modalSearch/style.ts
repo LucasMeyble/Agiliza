@@ -9,15 +9,30 @@ export const styles = StyleSheet.create({
         backgroundColor: '#E5E5E5',
     },
     header:{
-        flexDirection:'row',
+        
         backgroundColor: '#fff',
         height: 80,
         alignItems: 'center',
     },
+    subHeader: {
+        flexDirection:'row',
+        marginTop: 20,
+        alignItems: 'center',
+
+    },
+
     icon: {
         width: 20,
         height: 20,
-        marginLeft: 25,
+        
+    },
+
+    options: {
+        width: '100%',
+        marginTop: 5,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingHorizontal: 60
     },
     
     content: {
@@ -25,6 +40,7 @@ export const styles = StyleSheet.create({
         marginTop: 10,
         flex: 1,
     },
+
     inputContainer: {
         paddingRight: 200,
         marginLeft:10, 
