@@ -25,7 +25,7 @@ export function CardService({navigation} : any) {
             </View>
             <View style={styles.buttonsContainer}>
                 <View style={styles.button}>
-                    <ButtonCardChoice title={"Concorrer"} color={'#37D086'} />
+                    <ButtonCardChoice title={"Concorrer"} color={'#37D086'} onPress={() => {navigation.navigate('Budget')}} />
                 </View>
                 <View style={styles.button}>
                     <ButtonCardChoice title={"Ver Informações"} color={'#04B1D7'} onPress={() => {navigation.navigate('Compete')}} />

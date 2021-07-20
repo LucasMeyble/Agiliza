@@ -77,7 +77,7 @@ export function ModalCompete({ setModalVisible, modalVisible, navigation }: Prop
                     </View>
                 </View>
                 <View style={styles.buttonContainer}>
-                    <ButtonConfirm title={"Concorrer"} color={'#37D086'} onPress={() => {navigation.navigate('Home')}}/>
+                    <ButtonConfirm title={"Concorrer"} color={'#37D086'} onPress={() => {navigation.navigate('Budget')}}/>
                 </View>
             </View>
         </View >

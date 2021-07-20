@@ -12,6 +12,7 @@ import { RegisterS3 } from '../screens/RegisterStep3';
 import { RegisterS4 } from '../screens/RegisterStep4';
 import { Search } from '../screens/Search';
 import { Compete } from '../screens/Compete';
+import { Budget } from '../screens/Budget';
 
 export function StackRouts() {
     return (
@@ -49,6 +50,10 @@ export function StackRouts() {
             <Stack.Screen
                 name="Compete"
                 component={Compete}
+            />
+            <Stack.Screen
+                name="Budget"
+                component={Budget}
             />
 
         </Stack.Navigator>
