@@ -49,7 +49,7 @@ export function ModalCompete({ setModalVisible, modalVisible, navigation }: Prop
                 </View>
                 <View style={styles.timeContainer}>
                     <View>
-                        <Text style={styles.title}>Serviço creado à</Text>
+                        <Text style={styles.title}>Serviço criado à</Text>
                         <Text style={styles.subTitle}>2:00 Horas</Text>
                     </View>
                     <View >
