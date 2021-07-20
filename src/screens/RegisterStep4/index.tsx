@@ -13,7 +13,7 @@ export function RegisterS4({ navigation }: any) {
 
     return (
         <ScrollView>
-            <View style={styles.container}>
+            <View>
                 <SafeAreaView>
                     <KeyboardAvoidingView>
                         <TouchableWithoutFeedback style={styles.container} onPress={Keyboard.dismiss}>
@@ -23,7 +23,7 @@ export function RegisterS4({ navigation }: any) {
                                     </View>
 
                                     <View style={styles.titleContainer}>
-                                        <Text style={styles.title}>{`Etapa 2/3\nNos conte sobre você`}</Text>
+                                        <Text style={styles.title}>{`Etapa 2/2\nNós conte sobre você`}</Text>
                                     </View>
 
                                     <View style={styles.subTitleContainer}>

@@ -6,6 +6,8 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#E7E7EB',
+        width: '100%',
+        height: '100%'
     },
     subTitle: {
         fontSize: 25,

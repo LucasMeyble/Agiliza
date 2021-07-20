@@ -3,7 +3,7 @@ import { Image, TextInput, View, ImageSourcePropType, Text, TouchableOpacity } f
 import { styles } from "./style";
 import { closeIcon } from "../../assets/icons";
 import { SvgUri } from 'react-native-svg';
-import { CardService } from "../../components/cardService";
+import { SearchCards } from '../searchCards'
 
 type Props = {
     modalVisible: boolean,
@@ -51,8 +51,8 @@ export function ModalSearch({ setModalVisible, modalVisible, navigation }: Props
             </View>
 
             <View style={styles.content}>
-                <CardService />
-                <CardService />
+                <SearchCards />
+                <SearchCards />
             </View>
         </View >
 

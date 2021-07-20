@@ -11,14 +11,13 @@ export function Home({ navigation }: any) {
     return (
         <>
             <Header url={'www.google.com'} navigation={navigation} />
-            {/* <CardService />
-            <CardService /> */} 
+            <CardService />
+            <CardService />  
 
 
             <View style={styles.container}>
                 {/* <Button title="aperte=me" onPress={() => navigation.navigate('Login')} /> */}
-            <FirstService navigation={navigation}/>
-
+                {/* <FirstService navigation={navigation}/> */}
             </View>
         </>
     )
