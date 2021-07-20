@@ -1,6 +1,5 @@
-import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { Image, TextInput, View, Text, ImageSourcePropType, TouchableOpacity } from "react-native";
+import { View, Text } from "react-native";
 import { plusIcon } from "../../assets/icons";
 import { styles } from "./style";
 import { ButtonRegister } from '../buttonRegister';
@@ -20,7 +19,7 @@ export function FirstService({navigation}: any) {
                 Requisite um novo serviço
             </Text>
             <View style={styles.button}>
-                <ButtonRegister icon={plusIcon} onPress={() => {navigation.navigate('NewCalled')}}/>
+                <ButtonRegister icon={plusIcon} onPress={() => {navigation.navigate('Search')}}/>
             </View>
 
         </View>

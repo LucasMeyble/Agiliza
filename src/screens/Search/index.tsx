@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { View, Text, Button, Modal, Alert } from "react-native";
-import { ModalAdd } from "../../components/modalAdd";
+import { ModalSearch } from "../../components/modalSearch"; 
 import { useFocusEffect } from "@react-navigation/native";
 
 import { styles } from './style';
@@ -25,7 +25,7 @@ export function Search({ navigation }: any) {
                         setModalVisible(!modalVisible);
                     }}
                 >
-                    <ModalAdd navigation={navigation} setModalVisible={setModalVisible} modalVisible={modalVisible} />
+                    <ModalSearch navigation={navigation} setModalVisible={setModalVisible} modalVisible={modalVisible} />
                 </Modal>
             </View>
         </>
