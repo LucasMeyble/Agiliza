@@ -11,6 +11,7 @@ import { RegisterS2 } from '../screens/RegisterStep2';
 import { RegisterS3 } from '../screens/RegisterStep3';
 import { RegisterS4 } from '../screens/RegisterStep4';
 import { Search } from '../screens/Search';
+import { Compete } from '../screens/Compete';
 
 export function StackRouts() {
     return (
@@ -44,6 +45,10 @@ export function StackRouts() {
             <Stack.Screen
                 name="Search"
                 component={Search}
+            />
+            <Stack.Screen
+                name="Compete"
+                component={Compete}
             />
 
         </Stack.Navigator>

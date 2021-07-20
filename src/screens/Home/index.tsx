@@ -11,8 +11,8 @@ export function Home({ navigation }: any) {
     return (
         <>
             <Header url={'www.google.com'} navigation={navigation} />
-            <CardService />
-            <CardService />  
+            <CardService navigation={navigation}/>
+            <CardService navigation={navigation}/>  
 
 
             <View style={styles.container}>

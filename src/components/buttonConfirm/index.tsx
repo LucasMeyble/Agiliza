@@ -7,7 +7,7 @@ type Props = TouchableOpacityProps & {
     color: string
 }
 
-export function ButtonCardChoice({ title, color, ...rest }: Props) {
+export function ButtonConfirm({ title, color, ...rest }: Props) {
     return (
         <View style={styles.container}>
             <TouchableOpacity style={[styles.button, {backgroundColor: color}]} {...rest}>

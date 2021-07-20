@@ -5,7 +5,7 @@ import { styles } from "./style";
 import { ButtonCardChoice } from '../buttonCardChoice';
 
 
-export function CardService() {
+export function CardService({navigation} : any) {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -28,7 +28,7 @@ export function CardService() {
                     <ButtonCardChoice title={"Concorrer"} color={'#37D086'} />
                 </View>
                 <View style={styles.button}>
-                    <ButtonCardChoice title={"Ver Informações"} color={'#04B1D7'} />
+                    <ButtonCardChoice title={"Ver Informações"} color={'#04B1D7'} onPress={() => {navigation.navigate('Compete')}} />
                 </View>
             </View>
 

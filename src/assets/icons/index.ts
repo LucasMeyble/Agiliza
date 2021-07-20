@@ -25,6 +25,7 @@ import galeryIcon from './galery.png';
 import moreIcon from './more.png';
 import backingIcon from './backing.png';
 import finishIcon from './finished.png';
+import backingBlackIcon from './outline_arrow_back_ios_black_24dp.png';
 
 export { EmailIcon, 
     LockIcon,
@@ -51,5 +52,6 @@ export { EmailIcon,
     galeryIcon,
     moreIcon,
     backingIcon,
-    finishIcon
+    finishIcon,
+    backingBlackIcon
 };
