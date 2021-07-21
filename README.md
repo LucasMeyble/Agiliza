@@ -8,6 +8,7 @@ Aqui estão as tecnologias utilizadas neste projeto.
 * NPM
 * NODE.js
 * Expo
+* Postgres
 
 
 ## Serviços Usados
@@ -30,3 +31,4 @@ Aqui estão as tecnologias utilizadas neste projeto.
 * **Lucas Meyble**: @LucasMeyble (https://github.com/LucasMeyble)
 * **Thiago Gouvêa**: @thiagosng (https://github.com/thiagosng)
 * **Jónatas Alves**: @JonatasAlves9 (https://github.com/JonatasAlves9)
+* **Ricardo Cerqueira**: @rcerqueira (https://github.com/rcerqueira)
